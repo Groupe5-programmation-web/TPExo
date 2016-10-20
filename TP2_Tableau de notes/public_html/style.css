@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 19, 2016, 9:21:20 AM
+    Author     : Michel Tchouatcha
+*/
+
+h1{
+    align-content: center;
+    border-bottom: solid;
+    border-bottom-color: blue;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
+th {
+    padding: 15px;
+    background-color: yellowgreen;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:hover {background-color: #f5f5f5}
+
+.ens{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+a{
+    margin-top: 15px;
+    text-align: center;
+}
+
+table{
+    margin-top: 15px;
+    
+}
+
+img{
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block
+}
+
+.image{
+    width: 49px;
+    margin-left: 0px;
+}
+
+body{
+    background-image: url(images/maxresdefault.jpg);
+}
