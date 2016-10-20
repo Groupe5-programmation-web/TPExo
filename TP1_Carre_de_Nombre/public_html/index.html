@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="fr-FR">
+    <head>
+        <title>TP 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    
+    <h1>TP1 DHTML: Calculer le carré d'un nombre</h1>
+    <hr width="100%" color="blue" align=center style="margin-top: -20px" size="1px"><br/>
+    <center>
+        <div style="background-color: black; text-align: left; padding: 15px; 
+             color:white;
+             width: 70%;padding-top:10px;padding-bottom:10px;margin-top:-8px">
+            Entrer un nombre : 
+            <input type="text" id="nombre" value="10" size="10" onchange="calcul()" oninput="calcul()"/>
+            <button type="button" onClick="calcul()">Calculer</button><br/>
+            <p>
+                Le carré de <span id="in" style="background-color: red; color:black">
+                    
+                </span> est 
+                <span id="out" style="color: black; background-color: green"></span>
+            </p>
+            <script>
+                calcul();
+                function calcul () {
+                    nb = document.getElementById("nombre").value;
+                    if(isNaN(nb)){
+                        alert(nb + " n'est pas un nombre");
+                    }else{
+                        document.getElementById("in").innerHTML = nb;
+                        document.getElementById("out").innerHTML = (nb*nb);
+                    }
+                }
+            </script>
+        </div>
+    </center>
+    </body>
+</html>
